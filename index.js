@@ -17,12 +17,7 @@ function destructivelyPrependKitten(name){
   }
 
 function destructivelyRemoveFirstKitten(){
-    it('removes the First kitten from the kittens array', function() {
-      window.kittens = ['Milo', 'Otis', 'Garfield'];
-      destructivelyRemoveFirstKitten()
-
-      expect(window.kittens).toEqual(["Otis", "Garfield"])
-    })
+   kittens.shift();
   }
 
   describe('appendKitten(name)', function() {
