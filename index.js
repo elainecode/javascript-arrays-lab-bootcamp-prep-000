@@ -34,20 +34,10 @@ function removeLastKitten(){
   var len = kittens.length - 1;
   var newArr = kittens.slice(0,len);
   return newArr;
-    it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      window.kittens = ['Milo', 'Otis', 'Garfield'];
-      expect(removeLastKitten()).toEqual(["Milo", "Otis"])
-
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
   }
 
-  describe('removeFirstKitten()', function() {
-    it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      window.kittens = ['Milo', 'Otis', 'Garfield'];
-      expect(removeFirstKitten()).toEqual(["Otis", "Garfield"])
-
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
-  })
-})
+function removeFirstKitten(){
+  var len = kittens.length - 1;
+  var newArr = kittens.slice(0,len);
+  return newArr;
+    }
