@@ -21,12 +21,10 @@ function destructivelyRemoveFirstKitten(){
   }
 
   function appendKitten(name){
-    it('appends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      window.kittens = ['Milo', 'Otis', 'Garfield'];
-      expect(appendKitten("Broom")).toEqual(["Milo", "Otis", "Garfield", "Broom"])
+  
+  var newArr = kittens.slice(0).pop(name);
+  return newArr;
 
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
   })
 
   describe('prependKitten(name)', function() {
